@@ -1,0 +1,33 @@
+mat-sidenav-content {
+  overflow: hidden;
+}
+
+.content-container {
+  min-height: 100vh;
+  box-sizing: border-box;
+  /* padding: 25px; */
+}
+
+mat-icon {
+  color: var(--text-color);
+}
+
+.mat-drawer-inner-container {
+  background: var(--sidebar-color);
+}
+
+mat-toolbar{
+  background:  var(--background-color);
+  color: var( --primary-color);
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.tooltip-style{
+  background: var(--background-color);
+  padding: 10px;
+  font-size: 15px;
+}
+

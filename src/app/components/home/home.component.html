@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="row p-5">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Sl.no</th>
+                <th scope="col">Name</th>
+                <th scope="col">Place</th>
+                <th scope="col">Designation</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor=" let user of user; let i = index;">
+                <th scope="row">{{i}}</th>
+                <td>{{user.name}}</td>
+                <td>{{user.place}}</td>
+                <td>{{user.Designation}}</td>
+              </tr>
+            </tbody>
+            <hr>
+            <button mat-raised-button (click)="saveUsers()">Save</button>
+            <button mat-raised-button (click)="fetchUsers()">Fetch</button>
+          </table>
+    </div>
+</div>

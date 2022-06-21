@@ -1,0 +1,47 @@
+.sidenav {
+  width: 225px;
+}
+
+.toggle {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 25px 0;
+}
+
+.toggle:hover {
+  cursor: pointer;
+}
+
+.nav.active-link {
+  background-color: #8e5bb8;
+  border-left: solid 3px #2b108f;
+}
+
+.nav.active-link:hover {
+  transition-duration: 400ms;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-property: transform, border, background-color;
+}
+
+mat-list-item,
+a {
+  border: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+  background-color: var(--primary-color);
+  border-left: solid 3px  var(--background-color);
+}
+
+mat-icon {
+  color: var(--background-color);
+}
+.tooltip-style{
+  background: var(--background-color);
+  padding: 10px;
+  font-size: 15px;
+}
